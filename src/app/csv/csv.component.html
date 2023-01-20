@@ -1,0 +1,40 @@
+<h1>Upload the  Dataset</h1>
+<div class="center">
+  <label>
+      <input type="file" style="display:none"  #csvReader name="Upload CSV" id="txtFileUpload" (change)="uploadListener($event)" accept=".csv" style="display: none;" />
+      <img src="https://res.cloudinary.com/dibccigcp/image/upload/v1669353853/Upload_1_qpytre.png" style="width: 50px;">
+         </label>
+      <table class="minimalistBlack styled-table" *ngIf="records.length > 0">
+
+  <thead>    
+    <tr>    
+      <th>Invoice ID </th>    
+      <th>Branch </th>    
+      <th>City </th>    
+      <th>Customer type</th>    
+      <th>Gender</th>    
+      <th>Product line</th> 
+      <th>Unit price</th>
+      <th>Qunatity</th>   
+      <th>Tax 5%</th>   
+      <th>Total</th>   
+      <th>Gross Income</th>   
+    </tr>    
+  </thead>    
+  <tbody>    
+    <tr *ngFor="let record of records;let i = index;">    
+      <td> <span>{{record.Invoice}}</span> </td>    
+      <td> <span>{{record.Branch}}</span> </td>    
+      <td> <span>{{record.City}}</span> </td>    
+      <td> <span>{{record.Customer}}</span> </td>    
+      <td> <span>{{record.Gender}}</span> </td>    
+      <td> <span>{{record.Product}}</span> </td>    
+      <td> <span>{{record.Price}}</span> </td>    
+      <td> <span>{{record.Qunatity}}</span> </td>    
+      <td> <span>{{record.Tax}}</span> </td>    
+      <td> <span>{{record.Total}}</span> </td>    
+      <td> <span>{{record.Income}}</span> </td>    
+    </tr>    
+  </tbody>    
+</table>  
+</div>

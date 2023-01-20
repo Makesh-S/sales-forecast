@@ -1,0 +1,44 @@
+<body class="body">
+  <div class="center">
+    <div class="imgs">
+      <img height="474vh" width="400vw"  src="../../assets/graph.jpg" />
+    </div>
+    <div>
+      <div class="card">
+        <h1 class="mb-2">Sales Forecasting</h1>
+        <hr class="mb-2" />
+        <div class="input-group mb-3">
+          <h2 class="mb-2">Fill the constraints for prediction:</h2><br>
+          <select class="custom-select w-100 p-3" id="inputGroupSelect01">
+            <option selected>Select Perioditicity...</option>
+            <option value="1">Yearly</option>
+            <option value="2">Monthly</option>
+            <option value="3">Weekly</option>
+          </select>
+        </div><br>
+        <div class="form-floating mb-2">
+          <select class="custom-select w-100 p-3" id="inputGroupSelect01">
+            <option selected>Enter the limit</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+        </div><br>
+        <div class="d-flex w-100 gap-5">
+          <button id="B1" class="btn btn-primary w-100" (click)="send()">Select CSV File</button>
+          <button class="btn btn-secondary w-100"(click)="logout()">LogOut</button>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+</body>
